@@ -1,0 +1,35 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Калькулятор Дробей</title>
+    <style>
+        input {
+            width: 120px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Калькулятор Дробей</h1>
+
+    <input type="text" id="numerator1" placeholder="Числитель 1">
+    <input type="text" id="denominator1" placeholder="Знаменатель 1">
+
+    <select id="operation">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+    </select>
+
+    <input type="text" id="numerator2" placeholder="Числитель 2">
+    <input type="text" id="denominator2" placeholder="Знаменатель 2">
+
+    <button onclick="calculate()">Посчитать</button>
+
+    <h2>Результат:</h2>
+    <p id="result"></p>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
